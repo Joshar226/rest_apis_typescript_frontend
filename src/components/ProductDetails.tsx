@@ -12,6 +12,8 @@ export async function action({params} : ActionFunctionArgs) {
     await deleteProduct(+params.id)
     return redirect('/')
   }
+
+  return null
 }
 
 export default function ProductDetail({product} : ProductDetailsProps) {

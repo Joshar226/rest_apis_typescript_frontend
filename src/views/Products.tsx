@@ -11,6 +11,7 @@ export async function loader() {
 export async function action({request} : ActionFunctionArgs) {
   const data = Object.fromEntries(await request.formData())
   await updateProductAvailability(+data.id)
+  return null
 }
 
 export default function Products() {

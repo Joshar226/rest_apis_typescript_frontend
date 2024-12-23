@@ -12,6 +12,7 @@ export async function loader({params} : LoaderFunctionArgs) {
         }
         return product
     }
+    return null
 }
 
 export async function action({request, params} : ActionFunctionArgs) {
